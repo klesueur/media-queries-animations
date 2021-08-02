@@ -1,6 +1,9 @@
 /* Google font imports */
 @import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
 
 * {
   margin: 0;
@@ -13,14 +16,10 @@
   height: 100vh;
   width: 100vw;
   display: flex;
+  flex-direction: column;
   background: url(./eye-candy/header-bg.jpg) no-repeat center center fixed;
   background-size: cover;
   /* overflow: hidden; */
-}
-
-.App-title {
-  color: #fed136;
-  cursor: pointer;
 }
 
 .App-nav {
@@ -29,18 +28,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3% 0 3% 0;
-  margin: 0 10% 0 10%;
+  padding: 10px 50px 0 50px;
 }
 
 .App-title {
-  width: 15%;
+  width: 25%;
   font-family: 'Damion', cursive;
   font-size: 32px;
+  color: #fed136;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-links {
-  width: 85%;
+  width: 75%;
   padding: 10px;
   display: flex;
   flex-direction: row;
@@ -58,9 +60,52 @@
   transition: color 0.2s ease-out;
   letter-spacing: 0.075em;
 }
-
 .link:hover {
   color: #ffc800;
+  cursor: pointer;
+}
+
+.App-welcome {
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.greeting1 {
+  font-family: 'Arvo', serif;
+  font-size: 2em;
+  letter-spacing: 0.09em;
+  margin-bottom: 30px;
+}
+
+.greeting2 {
+  font-family: 'ABeeZee', sans-serif;
+  font-size: 4.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.045em;
+  margin-bottom: 60px;
+}
+
+.more-btn {
+  padding: 22px 45px 22px 45px;
+  background-color: #ffc800;
+  transition: background-color 0.3s ease-out;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18.5px;
+  letter-spacing: 0.04em;
+  font-weight: bold;
+}
+.more-btn:hover {
+  background-color: #d9aa00;
+  border-color: #cca000;
   cursor: pointer;
 }
 
